@@ -1,0 +1,34 @@
+body{
+    background-image: url(images/desenho-de-fundo-abstrato-branco_23-2148825582.jpg);
+    background-size: cover;
+   }
+
+   a, a:hover{
+    text-decoration: none;
+   all: unset;
+   }
+
+   .itemsContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .itemsContainer > div{
+    height: 40vh;
+    margin-top: -150px;
+    display:flex;
+    flex-direction: column; 
+    align-items:center;
+    justify-content: space-evenly;
+   }
+
+   .input{
+    width: 350px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #191919;
+    margin-bottom: -7%;
+   }
