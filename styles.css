@@ -3,11 +3,6 @@ body{
     background-size: cover;
    }
 
-   a, a:hover{
-    text-decoration: none;
-   all: unset;
-   }
-
    .itemsContainer{
     width: 100vw;
     height: 100vh;
