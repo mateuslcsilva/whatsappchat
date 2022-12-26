@@ -20,10 +20,30 @@ body{
     justify-content: space-evenly;
    }
 
+   .input-div{
+    margin-bottom: -7%;
+    height: 7vh ;
+   }
+
+   .alert-invalid-phone-number{
+    text-align: end;
+    color: red;
+    display: none;
+   }
+
    .input{
     width: 350px;
     border-radius: 3px;
     outline: none;
     border: 1px solid #191919;
-    margin-bottom: -7%;
+   }
+
+   .border-red{
+    border: 1px solid red;
+   }
+
+   @media (max-width: 1500px) {
+    #sendMessage{
+        margin-top: 20px;
+    }
    }

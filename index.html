@@ -9,25 +9,29 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="styles.css">
-		<script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<div class='itemsContainer'>
-<div>
+    <div class='itemsContainer'>
+        <div>
 
-<h2>Inicie uma conversa!</h2>
-<h4>Insira número de telefone abaixo:</h4>
+            <h2>Inicie uma conversa!</h2>
+            <h4>Insira número de telefone abaixo:</h4>
 
-<input class='input' onkeyup="getNumber(this)" value='5544'></input>
+            <div class="input-div">
+                <input class='input' onkeyup="getNumber(this)" value='44'></input>
+                <p class="alert-invalid-phone-number">*Número de Telefone Inválido!</p>
+            </div>
 
-<a id= 'sendMessage' href='https://wa.me/whatsappphonenumber/' target='_blank' class='btn btn-success'><i class="bi bi-whatsapp me-2"></i>Iniciar Conversa</a>
+            <a id='sendMessage' href='https://wa.me/whatsappphonenumber/' target='_blank'
+                class='btn btn-success disabled'><i class="bi bi-whatsapp me-2"></i>Iniciar Conversa</a>
 
-</div>
-</div>
+        </div>
+    </div>
 
 
 </body>
