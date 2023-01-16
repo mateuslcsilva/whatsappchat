@@ -23,12 +23,27 @@
             <h4>Insira número de telefone abaixo:</h4>
 
             <div class="input-div">
-                <input class='input' onkeyup="getNumber(this)" value='44'></input>
+                <input type="text" class='input' onkeyup="updateHref('phoneNumber')" value='44'></input>
                 <p class="alert-invalid-phone-number">*Número de Telefone Inválido!</p>
             </div>
-
-            <a id='sendMessage' href='https://wa.me/whatsappphonenumber/' target='_blank'
-                class='btn btn-success disabled'><i class="bi bi-whatsapp me-2"></i>Iniciar Conversa</a>
+            <div class="options-div">
+                <label for="optionSelect" class="option-select-label">Texto Inicial: </label>
+                <select name="option-select" id="optionSelect" onchange="messageText(this)">
+                    <option value="none">Nenhum</option>
+                    <option value="greeting">Saudação</option>
+                </select>
+                <div class="div-workplace-name">
+                    <label for="workplaceName">Empresa: </label>
+                    <input type="text" id="workplaceName" class="workplace-name" onchange="updateHref('messageText')">
+                </div>
+            </div>
+            <a 
+            id='sendMessage' 
+            href='https://wa.me/whatsappphonenumber/' 
+            target='_blank'
+            class='btn btn-success disabled'
+            onclick="clearAllTextInputs()"
+            ><i class="bi bi-whatsapp me-2"></i>Iniciar Conversa</a>
 
         </div>
     </div>

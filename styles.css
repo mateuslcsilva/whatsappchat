@@ -31,7 +31,7 @@ body{
     display: none;
    }
 
-   .input{
+   .input, .workplace-name{
     width: 350px;
     border-radius: 3px;
     outline: none;
@@ -42,8 +42,30 @@ body{
     border: 1px solid red;
    }
 
+   .options-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 5px;
+    transition: .5s ease-in;
+   }
+
+   .div-workplace-name{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow-x: hidden;
+    max-width: 0;
+    max-height: fit-content;
+    transition: .5s ease-in;
+   }
+
+   .workplace-name{
+    width: auto;
+   }
+
    @media (max-width: 1500px) {
-    #sendMessage{
+    .btn-success{
         margin-top: 20px;
     }
    }
