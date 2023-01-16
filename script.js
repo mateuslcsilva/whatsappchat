@@ -50,9 +50,11 @@ const messageText = (element) => {
 	switch (element.value){
 		case 'none':
 			document.querySelector('.div-workplace-name').style.maxWidth = '0'
+			document.querySelector('.workplace-name').setAttribute('disabled', 'true')
 			break
 		case 'greeting':
 			document.querySelector('.div-workplace-name').style.maxWidth = '20vw'
+			document.querySelector('.workplace-name').removeAttribute('disabled')
 			break
 		default:
 			return false
