@@ -1,12 +1,11 @@
 const DATE = new Date();
 
 const updateHref  = (changeType) => {
-	let phoneNumber = ''
+	let phoneNumber = getNumber()
 	let text = ''
 	switch (changeType){
-		case 'phoneNumber':
-			phoneNumber = getNumber()
-			break
+		case 'otherText':
+			return false
 		case 'messageText':
 			text = buildingGreetingMessage()
 			break
@@ -19,7 +18,7 @@ const updateHref  = (changeType) => {
 		return false
 	}
 
-	document.querySelector('#sendMessage').href=`https://wa.me/${phoneNumber}//?text=${text.replaceAll(' ', '%20')}` 
+	document.querySelector('#sendMessage').href=`https://wa.me/${phoneNumber}/?text=${text.replaceAll(' ', '%20')}` 
 
 }
 
