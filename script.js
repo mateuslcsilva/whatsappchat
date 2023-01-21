@@ -9,8 +9,6 @@ const updateHref  = (changeType) => {
 		case 'messageText':
 			text = buildingGreetingMessage()
 			break
-		default:
-		return
 	}
 
 	if(!text){
