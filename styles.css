@@ -31,11 +31,20 @@ body{
     display: none;
    }
 
-   .input, .workplace-name{
-    width: 350px;
+   .phone-number-input, 
+   .ddd-input, 
+   .workplace-name,
+   .custom-text,
+   .company-presentation{
+    width: 270px;
     border-radius: 3px;
     outline: none;
     border: 1px solid #191919;
+   }
+
+   .ddd-input{
+    width: 35px;
+    padding-left:8px;
    }
 
    .border-red{
@@ -57,18 +66,27 @@ body{
     border: 1px solid #191919;
    }
 
-   .div-workplace-name{
+   .div-workplace-name,
+   .div-custom-text,
+   .div-company-presentation{
     display: flex;
     flex-direction: row;
     gap: 5px;
     overflow-x: hidden;
     overflow-y: hidden;
-    max-width: 0;
-    height: 0;
-    transition: .5s ease-in;
+    max-width: 20vw;
+    height: 25px;
+    transition: .25s ease-in;
    }
 
-   .workplace-name{
+   .hidden{
+    max-width: 0;
+    height: 0;
+   }
+
+   .workplace-name,
+   .custom-text,
+   .company-presentation{
     width: auto;
    }
 
