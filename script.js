@@ -1,5 +1,15 @@
 const DATE = new Date();
 
+const pressEnter = (event) => {
+	let dddInput = document.querySelector('.ddd-input')
+	let phoneNumberInput = document.querySelector('.phone-number-input')
+	let phoneNumber = `55${dddInput.value}${phoneNumberInput.value.replace(/[^0-9]/g, '')}`
+	if(event.key == "Enter") {
+	if (phoneNumber.length < 12 || phoneNumber.length > 13) return false
+	document.querySelector('#sendMessage').click()
+	} 
+}
+
 const updateHref = (changeType) => {
 	let phoneNumber = getNumber()
 	let text = ''
@@ -115,6 +125,6 @@ const clearAllTextInputs = () => {
 	}
 	let inputs = []
 	inputs = document.querySelectorAll("input[type=text]")
-	inputs.forEach(input => input.value = '')
-	document.querySelector('.ddd-input').value = '44'
+	 let inputsArray = [...(new Set(inputs))]
+	inputsArray.filter(input => !input.classList.contains('ddd-input')).forEach(input => input.value = '')
 }

@@ -23,8 +23,8 @@
             <h4>Insira número de telefone abaixo:</h4>
 
             <div class="input-div">
-                <input type="text" class='ddd-input' onkeyup="updateHref('phoneNumber')" value='44' maxlength="2"></input>
-                <input type="text" class='phone-number-input' onkeyup="updateHref('phoneNumber')" placeholder="xxxx-xxxx ou 9 xxxx-xxxx"></input>
+                <input type="text" class='ddd-input' onkeyup="updateHref('phoneNumber')" onkeydown="pressEnter(event)" value='44' maxlength="2"></input>
+                <input type="text" class='phone-number-input' onkeydown="pressEnter(event)" onkeyup="updateHref('phoneNumber')" placeholder="xxxx-xxxx ou 9 xxxx-xxxx"></input>
                 <p class="alert-invalid-phone-number">*Número de Telefone Inválido!</p>
             </div>
             <div class="options-div">
@@ -37,15 +37,15 @@
                 </select>
                 <div class="div-workplace-name hiddable-div hidden">
                     <label for="greetingText">Empresa: </label>
-                    <input type="text" id="greetingText" class="workplace-name optional-input" onchange="updateHref('greetingText')">
+                    <input type="text" id="greetingText" class="workplace-name optional-input" onchange="updateHref('greetingText')" onkeydown="pressEnter(event)">
                 </div>
                 <div class="div-custom-text hiddable-div hidden">
                     <label for="customText">Digite texto: </label>
-                    <input type="text" id="customText" class="custom-text optional-input" onchange="updateHref('customText')">
+                    <input type="text" id="customText" class="custom-text optional-input" onchange="updateHref('customText')" onkeydown="pressEnter(event)">
                 </div>
                 <div class="div-company-presentation hiddable-div hidden">
                     <label for="companyPresentation">Vendedor: </label>
-                    <input type="text" id="companyPresentation" class="company-presentation optional-input" onchange="updateHref('companyPresentation')">
+                    <input type="text" id="companyPresentation" class="company-presentation optional-input" onchange="updateHref('companyPresentation')" onkeydown="pressEnter(event)">
                 </div>
             </div>
             <a 
